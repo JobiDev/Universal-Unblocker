@@ -18,13 +18,13 @@
 html, body {
     width: 100%;
     height: 100%;
+    margin: 0;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
 #gamebar{
-    height: 75px;
-    width: 50vw;
+  
     background-color: rgba(33, 58, 92, 0.4);
     border-radius: 25px;
     border: 2px solid black;
@@ -32,6 +32,14 @@ html, body {
     align-items: center;
     text-align: center;
     margin: 15px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 #smallbar{
@@ -42,14 +50,6 @@ html, body {
     border: 2px solid black;
     position: absolute;
     margin-left: 15px;
-}
-
-embed{
-    border: 3px solid black;
-    height: 85vh;
-    width: 85vw;
-    border-radius: 50px;
-    line-height: 85vh;
 }
 
 embed.padding{
@@ -128,8 +128,8 @@ button{
     height: 30px;
     padding-left: 5px;
     padding-right: 5px;
-    background-color: rgba(33, 58, 92, 0.4);
-    border: 3px solid black;
+    background-color: rgba(33, 58, 92, 0);
+    border: none;
     border-radius: 15px;
 }
 
@@ -159,7 +159,6 @@ a{
 }
 
 #iframecontainer {
-    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,4 +181,51 @@ a{
     left: 0;
     width: 100vw;
     height: 100vh;
+}
+
+.menu-top-center {
+    z-index: 5;
+    position: fixed;
+    width: 150px;
+    height: 40px;
+    border: solid 3px rgba(167, 167, 167, 0.623);
+    background-color: #000000a6;
+    border-radius: 20px;
+    margin: 10px;
+    left: 50%;
+    
+    transform: translateX(-50%);
+}
+.menu-left-bottom {
+    z-index: 5;
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    border: solid 3px rgba(167, 167, 167, 0.623);
+    background-color: #000000a6;
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    
+    margin: 10px;
+}
+.menu-bottom-center {
+    z-index: 5;
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    border: solid 3px rgba(167, 167, 167, 0.623);
+    background-color: #000000a6;
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px;
+    bottom: 0;
+}
+.menubtn {
+    transition: 0.3s;
+}
+.menubtn:hover {
+    transform: scale(1.2) !important;
+    color: rgb(202, 202, 202);
 }
