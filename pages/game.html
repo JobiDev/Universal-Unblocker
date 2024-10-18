@@ -4,8 +4,10 @@
         <title>
             UniUB - Game
         </title>
+
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9797508040343787"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
+
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FG22JV74V5"></script>
         <script>
@@ -15,29 +17,54 @@
 
         gtag('config', 'G-FG22JV74V5');
         </script>
+        <!--Google Fonts (: -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
         <!-- Google tag (gtag.js) -->
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <link rel="stylesheet" href="/css/games.css">
     </head>
     <body>
         <div id="particles-js" style="height: 100vh; width: 100vw; position: fixed;"></div>
-        <div id="container" style="position: fixed;">
-            <a href="/pages/games.html" style="width: 200px;" style="z-index: 99999999999999999999999999999999999;"><div id="smallbar" style="margin-top: 5px; margin-left: 5px; position: static; height: 50px;">
-                <center><h2 style="line-height: 50px; font-size: 22px;">Return to games</h2></center></a>
+            
+
+            <div class="menu-left-bottom">
+                <!--a href="/pages/games.html" style="" style="">
+                    <h2 style="">Return to games</h2></a>
+                </div>
+                <div onclick="fixer()" id="smallbar" style="">
+                    <h2 id="fixer" style="">Fixer</h2>
+                </div>
+                <div onclick="document.getElementById('gameframe').requestFullscreen()" id="smallbar" style="">
+                    <h2 id="fullscreen" style="">Fullscreen</h2>
+                </div-->
+
+                <button onclick="document.getElementById('gameframe').requestFullscreen()" class="" style="margin-left: 7px; cursor: pointer; float: left; top: 50%; position: relative; transform: translateY(-50%);">
+                    
+                    <span class="menubtn material-symbols-outlined">
+                    fullscreen
+                    </span>
+                 
+                </button>
+                <button class="" style="margin-left: 15px; cursor: pointer; float: left; top: 50%; position: relative; transform: translateY(-50%);">
+                    <a href="/pages/games.html" style="text-decoration: none;">
+                    <span class="menubtn material-symbols-outlined">
+                    home
+                    </span>
+                    </a>
+                </button>
+                <button onclick="fixer()" class="" style="margin-left: 15px; cursor: pointer; float: left; top: 50%; position: relative; transform: translateY(-50%);">
+                    
+                    <span class="menubtn material-symbols-outlined">
+                    build_circle
+                    </span>
+                 
+                </button>
+               
             </div>
-            <div onclick="fixer()" id="smallbar" style="margin-top: 5px; margin-left: 5px; position: absolute; height: 50px; transform: translateY(-60px) translateX(210px);">
-                <center><h2 id="fixer" style="line-height: 50px;">Fixer</h2></center>
-            </div>
-            <div onclick="document.getElementById('gameframe').requestFullscreen()" id="smallbar" style="margin-top: 5px; margin-left: 5px; position: absolute; height: 50px; transform: translateY(-60px) translateX(420px);">
-                <center><h2 id="fullscreen" style="line-height: 50px;">Fullscreen</h2></center>
-            </div>
-            <br><br><br><br>
-            <div id="iframecontainer" style="transform: translateY(-5vh);">
-                <center>
-                    <embed id="gameframe" src=""></embed>
-                </center>
-            </div>
-        </div>
+                
+            <embed id="gameframe" style="width: 100%; height: 100%; position: fixed;" src=""></embed>
+                
     </body>
 </html>
 <script src="/js/gamesmanager.js"></script>
